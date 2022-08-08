@@ -32,7 +32,7 @@
 
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
@@ -40,7 +40,7 @@
     background: var(--color-bor);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2rem 10rem 2rem 10rem;
     text-align: center;
     transition: var(--transition);
 }
