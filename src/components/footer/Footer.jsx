@@ -3,18 +3,19 @@ import './footer.css'
 import {BsInstagram} from 'react-icons/bs'
 import {BsFacebook} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>AZK</a>
+      <a href="/" className='footer__logo'>AZK</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="experience">Experience</a></li>
-        <li><a href="portfolio">Portfolio</a></li>
-        <li><a href="contact">Contact</a></li>
+      <li><Link to="/"><h3>Home</h3></Link></li>
+        <li><Link to="/about"><h3>About</h3></Link></li>
+        <li><Link to="/experience"><h3>Experience</h3></Link></li>
+        <li><Link to="/portfolio"><h3>Portfolio</h3></Link></li>
+        <li><Link to="/contact"><h3>Contact</h3></Link></li>
       </ul>
 
       <div className="footer__socials">

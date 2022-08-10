@@ -59,6 +59,8 @@ header {
     font-size: 0.9rem;
 }
 
+ 
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES)============== */
 @media screen and (max-width: 1024px) {
     header {

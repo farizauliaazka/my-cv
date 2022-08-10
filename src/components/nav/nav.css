@@ -1,27 +1,28 @@
-nav {
-    background: rgba(0, 0, 0, 0, 0.3);
-    width: max-content;
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-bor);
+    width: 100%;
+  }
+  
+  li {
+    float: left;
     display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
-}
-
-nav a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
-}
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 99.7px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(48, 47, 47);
+  }
 
 nav a:hover {
     background: rgba(0, 0, 0, 0, 0.3);
@@ -29,5 +30,23 @@ nav a:hover {
 
 nav .active {
     background: var(--color-blk);
-    color: var(--color-white)
+    color: var(--color-white);
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES)============== */
+@media screen and (max-width: 1024px) {
+   li a {
+    font-size: 1rem;
+    padding: 30px 44.2px;
+    gap: 1rem;
+   }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES)============== */
+@media screen and (max-width: 600px) {
+    li a {
+        font-size: 0.7rem;
+        padding: 10px 13.5px;
+        gap: 0.5rem;
+    }
 }

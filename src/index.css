@@ -110,7 +110,8 @@ a:hover {
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-bg)
+    color: var(--color-bg);
+    transition: var(--transition);
 }
 
 img {
@@ -120,7 +121,7 @@ img {
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES)============== */
-@media screen and (max-width: 102px) {
+@media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
     }

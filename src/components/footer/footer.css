@@ -35,7 +35,7 @@ footer a {
 .footer__socials a {
     background: var(--color-blk);
     color: var(--color-white);
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 0.7rem;
     display: flex;
     border: 1px solid transparent;

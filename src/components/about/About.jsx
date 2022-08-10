@@ -33,8 +33,8 @@ const About = () => {
           developers. While at school I learn HTML, CSS and Javascript.
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-
+          <a href="/contact" className='btn btn-primary'>Let's Talk</a>
+          
         </div>
       </div>      
     </section>
