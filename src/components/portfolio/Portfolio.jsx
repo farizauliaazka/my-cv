@@ -22,8 +22,7 @@ const Portfolio = () => {
             <img src={IMG2} alt="" />
           </div>
           <h3>Make A Simple Web Using HTML And CSS</h3>
-          <a href="https://github.com/" className='btn'>Github</a>
-          
+          <a href="https://github.com/" className='btn'>Github</a>         
         </article>
       </div>
     </section>

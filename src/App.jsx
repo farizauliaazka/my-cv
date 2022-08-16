@@ -6,13 +6,15 @@ import Experience from './components/experience/Experience'
 import Contact from './components/contact/Contact'
 import Portfolio from './components/portfolio/Portfolio'
 import Footer from './components/footer/Footer'
+import Tes from './components/tes/Tes'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {useState} from 'react'
 
 
+
 const App = () => {
   const [nama, setNama] = useState ("")
-  const [halo, setHalo] = useState ("😎WELCOME🥳")
+  const [halo, setHalo] = useState ("WELCOME :D")
   const [job, setJob] = useState ("")
 
 const datas = {
@@ -29,6 +31,7 @@ const datas = {
             <Route path='/experience' exact element={<Experience />}/>
             <Route path='/portfolio' exact element={<Portfolio />}/>
             <Route path='/contact' exact element={<Contact />}/> 
+            <Route path='/tes' exact element={<Tes />}/> 
             
           </Routes>                
           <Footer />

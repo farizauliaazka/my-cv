@@ -1,36 +1,58 @@
-ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--color-bor);
-    width: 100%;
-  }
-  
-  li {
-    float: left;
-    display: block;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px 99.7px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: rgb(48, 47, 47);
-  }
 
-nav a:hover {
-    background: rgba(0, 0, 0, 0, 0.3);
+ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-bor);
 }
 
-nav .active {
-    background: var(--color-blk);
-    color: var(--color-white);
+li a{
+  display: inline-block;
+  color: rgb(255, 250, 250);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: rgb(0, 0, 0);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.terserah {
+  display: inline-block;
+  padding: 0 6rem;
+}
+.terserah:hover {
+  background-color: var(--color-blk);
+  padding: 5 100px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555353;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(59, 59, 59, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #000000;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES)============== */

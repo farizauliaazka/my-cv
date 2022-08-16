@@ -3,6 +3,8 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/header-removebg-preview.png'
 import HeaderSosials from './HeaderSocials'
+import Button from '@mui/material/Button'
+
 
 const Header = ({datas}) => {
   const  {nama, setNama} = datas
@@ -14,12 +16,14 @@ const Header = ({datas}) => {
   }
 
   function kuli () {
-    setJob ("SOFTWARE ENGINER");
+    setJob ("REKAYASA PERANGKAT LUNAK");
   }
 
   function woi () {
     setHalo ("Fariz Aulia Azka");
   }
+
+  
 
 
   return (
@@ -28,7 +32,7 @@ const Header = ({datas}) => {
       <h5>{nama}</h5>
       <h1>{halo}</h1>
       <h5 className="textlight">{job}</h5><br/>
-      <button className='btn btn-primary' onClick={() => {what(); kuli(); woi();} }>Click</button>
+      <Button variant="contained"  onClick={() => {what(); kuli(); woi();} }>Click</Button>
      
       <CTA />
       <HeaderSosials />

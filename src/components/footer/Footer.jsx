@@ -11,7 +11,7 @@ const Footer = () => {
       <a href="/" className='footer__logo'>AZK</a>
 
       <ul className='permalinks'>
-      <li><Link to="/"><h3>Home</h3></Link></li>
+        <li><Link to="/"><h3>Home</h3></Link></li>
         <li><Link to="/about"><h3>About</h3></Link></li>
         <li><Link to="/experience"><h3>Experience</h3></Link></li>
         <li><Link to="/portfolio"><h3>Portfolio</h3></Link></li>
